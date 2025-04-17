@@ -1,0 +1,15 @@
+{
+        "modid": "BloodIsFuel",
+        "modname": "Blood Is Fuel",
+        "moddescription": "Makes all damage in Headspace heal the attacker.",
+        "modversion": "v1.0",
+        "i_audio": false,
+        "i_data": true,
+        "i_fonts": false,
+        "i_icon": false,
+        "i_img": false,
+        "i_plugins": false,
+        "i_lang": false,
+        "i_maps": false,
+        "i_movies": false
+}
