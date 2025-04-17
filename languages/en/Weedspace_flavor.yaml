@@ -1,0 +1,41 @@
+# =========================================================================================
+# ** TEMPLATE DIALOGUE
+# =========================================================================================
+
+message_plant:
+    text: A hanging plant.\! It dripps slightly on your head as you look at it.
+
+message_can:
+    text: Your watering can.\! It's well used.
+
+message_album:
+    text: Your photo album.\! All of the pictures are scribbled out.
+
+message_3:
+    text:
+
+message_4:
+    text:
+
+message_5:
+    text:
+
+message_6:
+    text:
+
+message_7:
+    text:
+
+message_8:
+    text:
+
+message_9:
+    text:
+
+message_10:
+    text:
+
+message_11:
+      faceset: MainCharacters_DreamWorld
+      faceindex: 2
+      text: 
