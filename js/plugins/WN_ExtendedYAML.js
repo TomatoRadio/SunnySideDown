@@ -65,20 +65,18 @@ Game_Message.prototype.showLanguageMessage = function(code) {
   var span = data.pan || 0;
   var cursedwoody = data.cursedwoody || false;
   var faceset = data.faceset || "";
-  //Fuck ass code I hate
-	if (faceset === "RS_Basil") {
-		let truename = faceset
+  //Silly code to check for Basil flowers
+	if (data.faceset == 'RS_Basil') {
 		let charm = $gameActors.actor(18).armors()[0]
-		if (!charm) {faceset = truename}
-		let name = charm.meta.PortraitPrefix
-		if (name) {
-			faceset = `${truename}_${name.trim()}`
-		} else {
-			faceset = truename
+		if (charm) {
+			let name = charm.meta.PortraitPrefix
+			if (name) {
+				var faceset = `RS_Basil_${name.trim()}`
+			}
 		}
-    }
+	};
   //End of fuck ass code
-};
+
   var faceindex = data.faceindex || 0;
   var background = data.background || 0;
   var positionType = data.position === undefined ? 2 : data.position;
@@ -136,21 +134,4 @@ old_Scene_Boot_prototype_loadSystemWindowImage.call(this);
 // Add reserved windowskins here.
 // This is going to make 30 hour load times surely (lol saffron)
 ImageManager.reserveSystem("Window", 0, this._imageReservationId);
-};
-
-// TR Addition for use with DGT_charmprefix
-Game_Message.prototype.prefixFaceset = function(data) {
-	var face = data.faceset || "";
-	if (face === "RS_Basil") {
-		let truename = face
-		let charm = $gameActors.actor(18).armors()[0]
-		if (!charm) {return truename}
-		let name = charm.meta.PortraitPrefix
-		if (name) {
-			return  `${truename}_${name.trim()}`
-		}
-			return truename
-    } else {
-		return face
-	}
 };

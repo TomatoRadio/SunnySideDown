@@ -188,10 +188,10 @@ var $plugins =
 {"name":"TR_StatFix","status":true,"description":"Adds EVASION as a stat in menus and stuff","parameters":{}},
 {"name":"HIME_BattleWeather","status":true,"description":"Allows you to display weather effects in battle","parameters":{}},
 {"name":"HIME_WindowskinChange","status":true,"description":"v1.0 - Change windowskins during the game using script calls!","parameters":{}},
-{"name":"WN_ExtendedYAML","status":true,"description":"v53.59 Adds increased functionality to YAML messages.\ncppensi p ix. c p : pee pee...","parameters":{}},
 {"name":"rph_state_icons","status":true,"description":"v1.4.0 Adds dynamic rows for state icons with customizable spacing and layout settings.","parameters":{"Icon Spacing":"26","Row Spacing":"26","Icons Per Row":"5"}},
 {"name":"tiledfixer","status":true,"description":"","parameters":{}},
 {"name":"zzz_fixbattlechoices","status":true,"description":"","parameters":{}},
 {"name":"DGT_charmprefix","status":true,"description":"Adds dynamic battle status face name prefixes based on equipped armor notetag. (v1.0)","parameters":{}},
+{"name":"WN_ExtendedYAML","status":true,"description":"v53.59 Adds increased functionality to YAML messages.\ncppensi p ix. c p : pee pee...","parameters":{}},
 {"name":"baja_modSaveData","status":true,"description":"","parameters":{}}
 ];
