@@ -185,9 +185,6 @@ if (hasSVPlus) {
   
     ImageManager.reserveSystem('faceset_states', 0, this._imageReservationId);
     ImageManager.reserveParallax('polaroidBG_BS_sky', 0, this._imageReservationId);
-    ImageManager.reserveFace("PARALLELS_FA_HERO_BATTLE", 0, this.imageReservationId);
-    ImageManager.reserveFace("PARALLELS_FA_GHOSTKEL_BATTLE", 0, this.imageReservationId);
-    ImageManager.reserveFace("PRL_DW_AUBREY", 0, this.imageReservationId);
 
     
   };
@@ -432,7 +429,4 @@ function getBackground(location){
 var old_Scene_OmoriFile_prototype_loadReservedBitmaps = Scene_OmoriFile.prototype.loadReservedBitmaps;
 Scene_OmoriFile.prototype.loadReservedBitmaps = function() {
   old_Scene_OmoriFile_prototype_loadReservedBitmaps.call(this);
-  ImageManager.reserveFace("PARALLELS_FA_HERO_BATTLE", 0, this.imageReservationId);
-  ImageManager.reserveFace("PARALLELS_FA_GHOSTKEL_BATTLE", 0, this.imageReservationId);
-  ImageManager.reserveFace("PRL_DW_AUBREY", 0, this.imageReservationId);
 };

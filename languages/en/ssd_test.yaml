@@ -1,0 +1,8 @@
+# =========================================================================================
+# ** TEMPLATE DIALOGUE
+# =========================================================================================
+
+weed_test:
+      faceset: RS_Basil
+      faceindex: 1
+      text: \basYou know...\! some \c[3]WEED\c[0] sounds pretty nice right about now...
