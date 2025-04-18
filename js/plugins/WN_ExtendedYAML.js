@@ -64,7 +64,21 @@ Game_Message.prototype.showLanguageMessage = function(code) {
   var svolume = data.volume || 90;    
   var span = data.pan || 0;
   var cursedwoody = data.cursedwoody || false;
-  var faceset = this.prefixFaceset(data) || "";
+  var faceset = data.faceset || "";
+  //Fuck ass code I hate
+	if (faceset === "RS_Basil") {
+		let truename = faceset
+		let charm = $gameActors.actor(18).armors()[0]
+		if (!charm) {faceset = truename}
+		let name = charm.meta.PortraitPrefix
+		if (name) {
+			faceset = `${truename}_${name.trim()}`
+		} else {
+			faceset = truename
+		}
+    }
+  //End of fuck ass code
+};
   var faceindex = data.faceindex || 0;
   var background = data.background || 0;
   var positionType = data.position === undefined ? 2 : data.position;
@@ -126,9 +140,9 @@ ImageManager.reserveSystem("Window", 0, this._imageReservationId);
 
 // TR Addition for use with DGT_charmprefix
 Game_Message.prototype.prefixFaceset = function(data) {
-	var faceset = data.faceset || "";
-	if (faceset = "RS_Basil") {
-		let truename = faceset
+	var face = data.faceset || "";
+	if (face === "RS_Basil") {
+		let truename = face
 		let charm = $gameActors.actor(18).armors()[0]
 		if (!charm) {return truename}
 		let name = charm.meta.PortraitPrefix
@@ -136,6 +150,7 @@ Game_Message.prototype.prefixFaceset = function(data) {
 			return  `${truename}_${name.trim()}`
 		}
 			return truename
-    }
-		
+    } else {
+		return face
+	}
 };
