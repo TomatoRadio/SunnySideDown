@@ -58,4 +58,30 @@
       }
 			return truename
     }
+//=============================================================================
+// * Actor Equip Item Window - Ok
+//=============================================================================
+Scene_OmoMenuEquip.prototype.onActorEquipItemWindowOk = function() {
+  // Get Actor
+  var actor = this._actorEquipWindow.actor();
+  // Get Slot Id
+  var slotId = this._actorEquipWindow.slotIdAtIndex() + 1;
+  // If Equipment slot is locked
+  if (actor.isEquipTypeLocked(slotId)) {
+    SoundManager.playBuzzer();
+    this._actorEquipItemWindow.activate();
+    return; 
+  } else {
+    // Play Equip Sound
+    SoundManager.playEquip();
+    // Equip Item
+    actor.changeEquip(slotId - 1, this._actorEquipItemWindow.item());
+    this._actorEquipItemWindow.refresh();  
+    this._actorEquipItemWindow.activate();
+    this._actorEquipStatus.refresh();
+    this._actorEquipWindow.refresh();
+    this._statusWindow.refresh();
+	$gameSwitches.setValue(1686, true);
+  };
+};
 }

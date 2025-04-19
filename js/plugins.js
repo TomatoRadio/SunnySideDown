@@ -58,7 +58,7 @@ var $plugins =
 {"name":"Anti Fail Actions","status":true,"description":"Prevents failure messages from appearing in certain actions.","parameters":{}},
 {"name":"Custom Battle Action Text","status":true,"description":"This plugins allows you to set customized messages for actions.","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
-{"name":"ExtraMovementFrames","status":true,"description":"Set sprites with more than 3 frames of animation","parameters":{"Cycle Time":"60","Default Idle Frame":"0","Default Pattern":"[]"}},
+{"name":"ExtraMovementFrames","status":false,"description":"Set sprites with more than 3 frames of animation","parameters":{"Cycle Time":"60","Default Idle Frame":"0","Default Pattern":"[]"}},
 {"name":"Exhydra_FollowerControl","status":true,"description":"Options to control and enhance interaction with followers.","parameters":{"Interpreter Commands":"205,212,213"}},
 {"name":"Extra_Followers","status":true,"description":"This plugin allows you to add extra followers to your party.","parameters":{"Max Extra Followers":"10"}},
 {"name":"Character_Movement_Graphics","status":true,"description":"This plugins let's you set special graphics for character movements such as:\r\nidle, walking, and running.","parameters":{}},
@@ -193,5 +193,6 @@ var $plugins =
 {"name":"zzz_fixbattlechoices","status":true,"description":"","parameters":{}},
 {"name":"DGT_charmprefix","status":true,"description":"Adds dynamic battle status face name prefixes based on equipped armor notetag. (v1.0)","parameters":{}},
 {"name":"WN_ExtendedYAML","status":true,"description":"v53.59 Adds increased functionality to YAML messages.\ncppensi p ix. c p : pee pee...","parameters":{}},
-{"name":"baja_modSaveData","status":true,"description":"","parameters":{}}
+{"name":"baja_modSaveData","status":true,"description":"","parameters":{}},
+{"name":"GALV_CharacterFrames","status":true,"description":"Enables map character sheets to have more frames per character.","parameters":{"Frame Speed Modifier":"f * 0.8"}}
 ];
