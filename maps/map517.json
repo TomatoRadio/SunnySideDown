@@ -1762,7 +1762,7 @@
                  "value":"tile-base"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":62,
          "x":0,
          "y":0
